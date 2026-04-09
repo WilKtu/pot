@@ -15,10 +15,19 @@ body {
 #navbar {
   background-color: #1a1a2e;
   padding: 15px 30px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
+  
 }
- 
+
+li{
+  border: #4747e2 solid 1px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -45,11 +54,16 @@ body {
   color: white;
   padding: 80px 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: space-around;
+  justify-content: space-around;
   gap: 40px;
 }
  
+.texto-presentacion {
+  width: 60%;
+  height: auto;
+}
+
 #presentacion .texto p:first-child {
   color: #e0c97f;
   font-size: 18px;
@@ -73,6 +87,7 @@ img{
   width: 200px;
   height: 200px;
 }
+
  
 .btn {
   display: inline-block;
@@ -110,6 +125,10 @@ img{
 #sobre-mi {
   padding: 70px 60px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+
 }
  
 #sobre-mi h1 {
@@ -161,14 +180,27 @@ img{
   color: #aaaaaa;
 }
  
+#habilidades-proyectos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  gap: 50px;
+}
+
 #habilidades {
   padding: 70px 60px;
   background-color: #f5f0eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 50%;
 }
  
 #habilidades h1 {
   font-size: 30px;
   color: #1a1a2e;
+  
 }
  
 #habilidades h1::after {
@@ -190,6 +222,7 @@ img{
 .tarjetas-habilidades {
   display: flex;
   flex-wrap: wrap;
+  align-items: last baseline;
   gap: 20px;
 }
  
@@ -214,11 +247,18 @@ img{
 #proyectos {
   padding: 70px 60px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
  
 #proyectos h1 {
   font-size: 30px;
   color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
 }
  
 #proyectos h1::after {
@@ -239,7 +279,8 @@ img{
  
 .tarjetas-proyectos {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: column;
+  align-items: last baseline;
   gap: 25px;
 }
  
